@@ -1,3 +1,6 @@
-# SOC-Tools
-This repository is designed to provide access to all the SOC tools that I build. I often have wanted various things or features and have started building things like
-an auto note formatter with various useful options and a regex based IOC lookup
+# IOC Lookup
+This simple chrome extension does works on taking highlighted selected text and appending it to predetermined URL's (these can be changed in the content.js) section. 
+This ext can Identify non public IP adresses, domains (regex based on https:// or http://), SHA256 hashes and windows event codes (based onan exact 4 numeric digits.)
+
+# Credit to Zach Henard with the original SOC-Multitool, which this is a simplified version of. Repo can be found here:
+https://github.com/zdhenard42/SOC-Multitool
