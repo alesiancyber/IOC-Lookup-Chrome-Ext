@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Lookup IOC",
+  "version": "1.0",
+  "description": "Matches selected text using regex and appends it to specific URLs.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
