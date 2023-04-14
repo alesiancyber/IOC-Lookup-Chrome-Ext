@@ -66,12 +66,8 @@ function matchAndAppend() {
   }
 }
 
-chrome.runtime.sendMessage({ command: "contentScriptLoaded" });
-
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   if (message.command === "LookupIOC") {
     matchAndAppend();
-  } else if (message.command === "ping") {
-    sendResponse({ status: "pong" });
   }
 });
